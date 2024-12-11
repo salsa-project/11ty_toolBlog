@@ -3,7 +3,7 @@ title: YouTube Video Embed
 date: 2020-09-08T17:44:03.000Z
 excerpt: Easily embed YouTube videos in your markdown posts.
 author: shane-robinson
-draft: 
+draft: true
 seo:
   title:
   description:
@@ -48,9 +48,9 @@ And we can leave the fourth attribure, `start time` completely off because we wa
 {% raw %}
 
 ```liquid
-{% youtube "oHg5SJYRHA0", "Fun Title Here", "8:6" %}
+{% youtube "ofyqFIYEVaY", "Fun Title Here", "16:9" %}
 ```
 
 {% endraw %}
 
-{% youtube "oHg5SJYRHA0", "Fun Title Here", "8:6" %}
+{% youtube "ofyqFIYEVaY", "Fun Title Here", "16:9" %}

@@ -3,10 +3,10 @@
 title: Let's talk about static sites!
 layout: page
 excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
-author: shane-robinson # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
+author: Med Amine # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
 eleventyNavigation: # Required if want to display in Main Nav Bar
   key: main # "main" is required
-  title: Welcome # as it will appear in the nav
+  title: Home # as it will appear in the nav
   order: 1 # order to display in the nav (index = 1)
 seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
   title:
@@ -14,22 +14,22 @@ seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
   image: # used for OG:image and Twitter:image. Overrides default set in _data/meta.siteImage
 hero: graphic # options: carousel, graphic, video, split (text & image)
 heroSettings:
-  height:
-    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
+  height: 
+    mobile: h-1/2 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
     desktop: # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: # default bg-black
-    image: home/plane.jpg # relative to /assets/images/
+    image: home/10.jpg # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
     video: pixabay-john-macdougall.mp4 # local relative /assets/video/, or full https://... if remote?
     opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
     opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
-  headingText: Is your data lost in the forest,<br>or the trees?
+  headingText: Where Every Tap Tells A Qofai Story
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
   headingTextCase: # default = as typed - options: uppercase, lowercase, capitalize
-  subheadingText: This is some pithy text that explains why you should hire us without reading any further... Or is it farther?
+  subheadingText: Since productivity is key Qofai delivers insights and tools to help you work smart and ship fast
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
-  buttonText: Contact Us... # no button generated if left blank
+  buttonText: # no button generated if left blank
   buttonURL: /contact/ # full url required. Example: https://thisdomain.com/somepage/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
   buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg

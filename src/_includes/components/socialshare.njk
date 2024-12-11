@@ -40,7 +40,7 @@
 
 {% if structure.g_showShareTwitter %}
   <div>
-    <a rel="noreferrer" aria-label="Share on Twitter" id="shareviatwitter" class="{{ colors.socialShareCustom.color or colors.socialShareDefault.color }} hover:{{ colors.socialShareCustom.hover or colors.socialShareDefault.hover }}" alt="Share on Twitter"  href="https://twitter.com/share?text={{ title | urlencode }}&url={{ absolutePageUrl }}">
+    <a rel="noreferrer" aria-label="Share on Twitter" id="shareviatwitter" class="{{ colors.socialShareCustom.color or colors.socialShareDefault.color }} hover:{{ colors.socialShareCustom.hover or colors.socialShareDefault.hover }}" alt="Share on Twitter"  href="https://twitter.com/share?text={{ title | urlencode }}&url={{ absolutePageUrl }}" target="_blank">
       {% svg "twitter", "mx-2 h-6 w-6 fill-current", "Twitter logo", "share" %}
     </a>
   </div>

@@ -1,13 +1,25 @@
 ---
-title: Color Settings
-date: 2020-09-01T17:44:03.000Z
-author: shane-robinson
+title: First Post "Hello World" :)
+date: 2024-12-10T06:50:03.000Z
+author: med-amine
 excerpt: It's simple to customize almost all the colors.
-draft: 
+draft: false
 seo:
   title:
   description:
   image: 2020/09/colors.jpg
+hero: graphic # options: carousel, graphic, video, split (text & image)
+heroSettings:
+  height:
+    mobile: h-1/2 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
+    desktop: # leave blank to inherit "mobile" height (default = full screen)
+  bg:
+    color: # default bg-black
+    image: home/10.jpg # relative to /assets/images/
+    imagePosition: # options = bg-center (default), bg-left, bg-right
+    video: pixabay-john-macdougall.mp4 # local relative /assets/video/, or full https://... if remote?
+    opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
+    opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
 images: # relative to /src/assets/images/
   feature:
   thumb: 2020/09/colors.jpg

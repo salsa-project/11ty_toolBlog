@@ -27,7 +27,16 @@ module.exports = {
 				'1/5': 'calc(100vh / 5)',
 				96: '24rem',
 				128: '32rem',
+			}),// created my own widths so can specify for Heros
+			width: (theme) => ({
+				'w1/2': '50vw',
+				'w3/4': '75vw',
+				'w9/10': '90vw',
+				'w1/1': '100vw'
 			}),
+			contrast: {
+				93: '.93',
+			  }
 		},
 	},
 	variants: {},

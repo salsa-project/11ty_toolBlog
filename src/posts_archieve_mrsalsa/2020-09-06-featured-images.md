@@ -3,7 +3,7 @@ title: Featured Post Images
 date: 2020-09-06T17:44:03.000Z
 excerpt: Easily add featured images (heros) just like in Wordpress.
 author: shane-robinson
-draft: 
+draft: true
 seo:
   title:
   description:

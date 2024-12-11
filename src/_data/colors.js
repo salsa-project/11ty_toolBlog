@@ -61,7 +61,7 @@ module.exports = {
 	navCustom: {
 		barBg: '',
 		text: 'text-gray-700',
-		textActive: 'text-gray-800',
+		textActive: 'text-teal-500',
 		textHover: 'text-gray-800',
 		textActiveBg: 'bg-gray-100',
 		textFocus: 'text-gray-500',

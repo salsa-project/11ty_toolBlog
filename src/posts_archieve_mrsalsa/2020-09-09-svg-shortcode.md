@@ -3,7 +3,7 @@ title: SVG - Shortcode
 date: 2020-09-09T17:44:03.000Z
 excerpt: Easily add and customize SVGs in your markdown posts.
 author: shane-robinson
-draft:
+draft: true
 seo:
   title:
   description:

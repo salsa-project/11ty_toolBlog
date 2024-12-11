@@ -5,43 +5,31 @@ layout: page
 eleventyNavigation:
   key: main
   title: About # as it will appear in the nav
-  order: 2 # order to display in the nav
+  order: 3 # order to display in the nav
 seo:
-  title: About Us # overrides 'title' above on both Page and META
+  title: About Me # overrides 'title' above on both Page and META
   description:
   image:
 ---
 
-{% wrap "bg-red-100 mt-4 border border-red-300 rounded-lg underline" %}
 
-Text courtesy [Fillerama.io](http://fillerama.io/)
+Welcome to my corner of the web! I'm someone who's always exploring new ideas, whether it's through code, automation, or building unique solutions for everyday challenges. My journey so far has been a blend of creative problem-solving and a passion for technology.  
 
-{% endwrap %}
+<br>
 
-## I hear the jury's still out on science.
+### What I Do  
+I specialize in scripting and fullstack web development, crafting intuitive and engaging user experiences. Over time, I’ve ventured into areas like **automation workflows** using tools like n8n and **website automation** with Puppeteer. Whether it's optimizing processes for small businesses or tackling niche projects, I enjoy finding smart ways to make things easier.
 
-Guy's a pro. It's a hug, Michael. I'm hugging you. Michael! I care deeply for nature. That's what it said on 'Ask Jeeves.' Across from where?
+<br>
 
-No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide. **Not tricks, Michael, illusions.** _Really?_ Did nothing cancel?
+### My Philosophy  
+For me, simplicity and creativity go hand in hand. I believe in writing clear, descriptive code, exploring innovative solutions, and making sure every project serves a purpose. I also embrace challenges as opportunities to grow and improve, whether it’s designing e-commerce websites or automating social media workflows.
 
-## There's so many poorly chosen words in that sentence.
+<br>
 
-No! I was ashamed to be SEEN with you. I like being with you. That's why you always leave a note! It's called 'taking advantage.' It's what gets you ahead in life. Steve Holt!
+### What's Next?  
+Right now, I’m working on **Qofai**, a space to bring my ideas and projects to life. It’s still in the works, but I’m excited to share what’s coming soon.
 
-1. Michael!
-2. What's Spanish for "I know you speak English?"
-3. What's Spanish for "I know you speak English?"
+If I’m not deep into code, you’ll find me brainstorming new ways to help small businesses thrive, naming pigeons, or diving into the latest trends in Tech, AI and Automation. I’m always looking for ways to connect and collaborate, so feel free to reach out.
 
-### No… but I'd like to be asked!
-
-I don't understand the question, and I won't respond to it. Oh, you're gonna be in a coma, all right. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
-
-- No… but I'd like to be asked!
-- Guy's a pro.
-- Well, what do you expect, mother?
-
-That's what it said on 'Ask Jeeves.' I hear the jury's still out on science. It's called 'taking advantage.' It's what gets you ahead in life. Say goodbye to these, because it's the last time! Marry me.
-
-No! I was ashamed to be SEEN with you. I like being with you. Well, what do you expect, mother? But I bought a yearbook ad from you, doesn't that mean anything anymore? Say goodbye to these, because it's the last time!
-
-No! I was ashamed to be SEEN with you. I like being with you. First place chick is hot, but has an attitude, doesn't date magicians. No… but I'd like to be asked! I care deeply for nature.
+Thanks for stopping by!
