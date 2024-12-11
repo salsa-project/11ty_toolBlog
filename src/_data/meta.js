@@ -1,5 +1,5 @@
 module.exports = {
-	siteURL: 'https://qofai.com' || process.env.URL || 'http://localhost:8080',
+	siteURL: process.env.URL || 'http://localhost:8080',
 	siteName: "Qofai Tech Purposes Website such as blogging and more...",
 	siteDescription: 'Set of tools and valuable posts for tech and non tech users.',
 	siteImage: '/assets/images/site/default.jpg',

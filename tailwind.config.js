@@ -36,7 +36,10 @@ module.exports = {
 			}),
 			contrast: {
 				93: '.93',
-			  }
+			  },
+			scale: {
+			'102': '1.02',
+			}
 		},
 	},
 	variants: {},

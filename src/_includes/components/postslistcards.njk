@@ -4,7 +4,7 @@
       <div class="grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none">
         {% for post in postslist | reverse %}
 
-          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div class="flex flex-col overflow-hidden rounded-lg shadow-lg hover:-translate-y-1 hover:scale-102 duration-200 ">
             <div class="flex-shrink-0">
               <a href="{{ post.url | url }}">
                 <img class="object-cover {{ post.data.images.align }} w-full h-48" src={% if post.data.images.thumb %}"/assets/images/{{ post.data.images.thumb }}"{% else %}"/assets/images/david-kovalenko-G85VuTpw6jg-unsplash.jpg"{% endif %} alt="{{ title }} Thumbnail">
