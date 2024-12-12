@@ -1,5 +1,5 @@
-<header class=" rounded shadow-md {{ heroSettings.bg.color or 'bg-white' }} mt-5 m-auto lg:overflow-hidden {{ heroSettings.height.mobile or 'h-1/1' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/1' }}">
-  <div class="bg-no-repeat bg-cover bg-center contrast-93 lg:w-w9/10 sm:w-w1/1"  style="background-image: url(/assets/images/{{ heroSettings.bg.image }}); height: inherit;"></div>
+<header class="relative {{ heroSettings.bg.color or 'bg-black' }} lg:overflow-hidden {{ heroSettings.height.mobile or 'h-1/1' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/1' }}">
+  <div class="absolute inset-0 z-negative  bg-fixed bg-no-repeat bg-cover {{ heroSettings.bg.imagePosition or 'bg-center' }} {{ heroSettings.bg.opacityMobile or 'opacity-100' }} md:{{ heroSettings.bg.opacityDesktop or heroSettings.bg.opacityMobile or 'opacity-100' }}" style="background-image: url(/assets/images/{{ heroSettings.bg.image }});"></div>
 
   {# Shared across hero components  #}
   {% include "components/hero-text-overlay.njk" %}

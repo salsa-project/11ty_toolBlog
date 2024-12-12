@@ -11,7 +11,7 @@ module.exports = {
 	 * ===== Global Site Text Color =====
 	 */
 	siteTextDefault: 'text-gray-900',
-	siteTextCustom: 'text-firstColor',
+	siteTextCustom: 'text-gray-700',
 
 	/**
 	 * Reason for both 'xxxDefault' and 'xxxCustom'
@@ -59,11 +59,11 @@ module.exports = {
 	 *  If you delete any variable keys, 11ty won't work.
 	 */
 	navCustom: {
-		barBg: '',
+		barBg: 'bg-thirdColor',
 		text: 'text-firstColor',
-		textActive: 'text-secondColor',
+		textActive: 'text-thirdColor',
 		textHover: 'text-gray-800',
-		textActiveBg: 'bg-thirdColor',
+		textActiveBg: 'bg-secondColor',
 		textFocus: 'text-gray-500',
 		mobileBg: '',
 		mobileBgActive: 'bg-gray-700',
@@ -106,7 +106,7 @@ module.exports = {
 	 * ===== Excerpts on Post Lists
 	 */
 	excerptDefault: 'text-gray-700',
-	excerptCustom: 'text-sm leading-relaxed italic text-secondColor',
+	excerptCustom: 'text-sm leading-relaxed italic text-gray-500',
 
 	/**
 	 * ===== Author / Date Block and their Social Icons =====
@@ -121,7 +121,7 @@ module.exports = {
 	},
 	authorCustom: {
 		name: 'text-firstColor',
-		date: 'text-secondColor',
+		date: 'text-gray-500',
 		socialIcons: 'text-secondColor',
 		socialIconsHover: '',
 	},
