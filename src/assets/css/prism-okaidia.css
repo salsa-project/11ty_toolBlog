@@ -121,3 +121,27 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+
+
+/*================ custom ================*/
+h1, p{
+	font-family: "lexend", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+p{
+	font-family: "Onest", sans-serif;
+	font-weight: 400;
+}
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .60rem;
+	background: #F6F6FB;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #241e55;
+    border-radius: .5rem;
+}
