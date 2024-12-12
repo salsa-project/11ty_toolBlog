@@ -34,6 +34,11 @@ module.exports = {
 				'w9/10': '90vw',
 				'w1/1': '100vw'
 			}),
+			colors: {
+			  'firstColor': '#3E4147',
+			  'secondColor': '#707052',
+			  'thirdColor': '#F6F6FB',
+			},
 			contrast: {
 				93: '.93',
 			  },

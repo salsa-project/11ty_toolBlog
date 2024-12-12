@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #cover {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-image: url(/src/assets/images/home/11.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: contrast(0.9);
+            z-index: -1;
+        }
+
+        .glass,
+        .glass2 {
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass2 {
+            /* From https://css.glass */
+            border-radius: 10%;
+            background: rgba(78, 78, 77, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .pop {
+            transition: 0.08s transform ease;
+        }
+
+        .pop:hover {
+            transform: scale(.98);
+        }
+
+        .pop:active {
+            transition: 0s all;
+            transform: scale(1);
+        }
+
+        .container {
+            height: 100vh;
+            width: inherit;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .layout {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .l2 {
+            flex: 2.5;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            max-height: 47vh;
+        }
+
+        .avatar {
+            width: 60%;
+            text-align: center;
+        }
+
+        .avatar>img {
+            width: 100%;
+            margin: 0px auto;
+            border-radius: 50%;
+        }
+
+        .author p {
+            color: rgb(240, 240, 240);
+            font-family: monospace;
+            font-weight: 300;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        .author .me {
+            font-size: 11pt;
+        }
+
+        .tools {
+            width: 50%;
+        }
+
+        .tools img {
+            width: 80%;
+            margin: -50% auto 0px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .layout .tools p {
+            font-size: 9pt;
+            transform: skewX(1.5deg);
+        }
+        .tool{
+            display: flex;
+            padding-top: 40px;
+        }
+        .tool img{
+            position: absolute;
+            top: 0px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cover"> </div>
+    <div class="container glass">
+        <div class="layout">
+            <div class="author glass2 pop">
+                <p>Wanna Know Me :)</p>
+                <div class="avatar">
+                    <img src="/src/assets/images/authors/med-amine.png" alt="" srcset="">
+                </div>
+
+                <p class="me">Mohamed Amine</p>
+                <p class="me">Web Developer & Content Creator & AI & Automation Systems Integrator</p>
+            </div>
+            <div class="author glass2 pop tools">
+                <div class="tool">
+                    <p class="me">ForLazyScrapers</p>
+                    <div class="avatar">
+                        <img src="/src/assets/images/home/12.png" alt="" srcset="">
+                    </div>
+                </div>
+
+                <p class="me">small tool that lets you get the element selectors fast and with ease</p>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="layout l2">
+
+        </div>
+        <div class="layout">
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

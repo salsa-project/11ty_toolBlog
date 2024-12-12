@@ -11,7 +11,7 @@ module.exports = {
 	 * ===== Global Site Text Color =====
 	 */
 	siteTextDefault: 'text-gray-900',
-	siteTextCustom: '',
+	siteTextCustom: 'text-firstColor',
 
 	/**
 	 * Reason for both 'xxxDefault' and 'xxxCustom'
@@ -60,17 +60,17 @@ module.exports = {
 	 */
 	navCustom: {
 		barBg: '',
-		text: 'text-gray-700',
-		textActive: 'text-teal-500',
+		text: 'text-firstColor',
+		textActive: 'text-secondColor',
 		textHover: 'text-gray-800',
-		textActiveBg: 'bg-gray-100',
+		textActiveBg: 'bg-thirdColor',
 		textFocus: 'text-gray-500',
 		mobileBg: '',
 		mobileBgActive: 'bg-gray-700',
 		mobileBgHover: 'bg-gray-100',
 		mobileBgFocus: 'bg-gray-300',
-		mobileText: 'text-gray-500',
-		mobileTextActive: 'text-gray-300',
+		mobileText: 'text-firstColor',
+		mobileTextActive: 'text-secondColor',
 		mobileTextHover: 'text-gray-600',
 		mobileTextFocus: 'text-gray-700',
 		mobileButton: 'text-gray-500',
@@ -100,13 +100,13 @@ module.exports = {
 	 * manage those in /src/assets/css/tailwind.css
 	 */
 	headingsDefault: 'text-teal-500',
-	headingsCustom: 'text-gray-700',
+	headingsCustom: 'text-firstColor',
 
 	/**
 	 * ===== Excerpts on Post Lists
 	 */
 	excerptDefault: 'text-gray-700',
-	excerptCustom: 'text-sm leading-relaxed italic text-gray-700',
+	excerptCustom: 'text-sm leading-relaxed italic text-secondColor',
 
 	/**
 	 * ===== Author / Date Block and their Social Icons =====
@@ -120,9 +120,9 @@ module.exports = {
 		socialIconsHover: 'text-gray-600',
 	},
 	authorCustom: {
-		name: '',
-		date: '',
-		socialIcons: '',
+		name: 'text-firstColor',
+		date: 'text-secondColor',
+		socialIcons: 'text-secondColor',
 		socialIconsHover: '',
 	},
 
@@ -139,8 +139,8 @@ module.exports = {
 		hover: 'text-gray-800',
 	},
 	socialShareCustom: {
-		color: '',
-		hover: '',
+		color: 'text-firstColor',
+		hover: 'text-secondColor',
 	},
 
 	/**
@@ -154,9 +154,9 @@ module.exports = {
 		border: 'border-teal-900',
 	},
 	buttonCustom: {
-		text: '',
+		text: 'text-secondColor',
 		textHover: '',
-		bg: '',
+		bg: 'text-thirdColor',
 		bgHover: '',
 		border: '',
 	},
@@ -234,8 +234,8 @@ module.exports = {
 		text: 'text-teal-500',
 	},
 	footerCustom: {
-		barBg: 'bg-gray-900',
-		text: 'text-gray-100',
+		barBg: '',
+		text: 'text-gray-800',
 	},
 
 	/**
@@ -245,7 +245,7 @@ module.exports = {
 	socialIconsDefault: 'text-teal-400',
 	socialIconsHoverDefault: 'text-teal-500',
 
-	socialIconsCustom: 'text-gray-100',
+	socialIconsCustom: 'text-firstColor',
 	socialIconsHoverCustom: 'text-gray-200',
 
 	// Generally I use borders as replacements for <hr> tags.
