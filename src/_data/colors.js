@@ -106,7 +106,7 @@ module.exports = {
 	 * ===== Excerpts on Post Lists
 	 */
 	excerptDefault: 'text-gray-700',
-	excerptCustom: 'text-sm leading-relaxed italic text-gray-500',
+	excerptCustom: 'text-sm leading-relaxed italic text-gray-600',
 
 	/**
 	 * ===== Author / Date Block and their Social Icons =====
@@ -121,7 +121,7 @@ module.exports = {
 	},
 	authorCustom: {
 		name: 'text-firstColor',
-		date: 'text-gray-500',
+		date: 'text-gray-600',
 		socialIcons: 'text-secondColor',
 		socialIconsHover: '',
 	},
