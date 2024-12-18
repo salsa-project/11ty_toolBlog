@@ -12,20 +12,20 @@ seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
   title:
   description:
   image: # used for OG:image and Twitter:image. Overrides default set in _data/meta.siteImage
-hero: graphic  # options: carousel, graphic, video, split (text & image)
+hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height: 
     mobile: h-8/10 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
     desktop: # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: # default bg-black
-    image:  home/10.jpg # relative to /assets/images/
+    image:  home/14.webp # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
     video: pixabay-john-macdougall.mp4 # local relative /assets/video/, or full https://... if remote?
     opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
     opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
-  headingText: Where Every Tap Tells A Qofai Story
-  headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
+  headingText: Every Sip Tells A Qofai Story
+  headingTextColor: text-gray-800 # default = text-white (can use any TailwindCSS text-[color]-[xxx])
   headingTextCase: # default = as typed - options: uppercase, lowercase, capitalize
   subheadingText: Since productivity is key Qofai delivers insights and tools to help you work smart and ship fast
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
@@ -43,3 +43,15 @@ heroSettings:
       - home/9.jpg
 ---
 
+
+<div class="h-1/2 bg-red-400 flex">
+  <div class="flex-2">
+    <p> Don't Hesitate </p>
+    <h1>Creativity Starts Here</h1>
+    <p> We build web solution for busnisses , You can be one of them, get in touch </p>
+  </div>
+  <div class="bg-blue-400 flex-1">
+    <h1>Work Starts Here</h1>
+    <img src="" alt=""/>
+  </div>
+</div>

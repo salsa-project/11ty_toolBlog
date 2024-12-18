@@ -30,7 +30,9 @@ module.exports = {
 				128: '32rem',
 			}),// created my own widths so can specify for Heros
 			width: (theme) => ({
+				'w1/4': '25vw',
 				'w1/2': '50vw',
+				'w2/3': '63vw',
 				'w3/4': '75vw',
 				'w9/10': '90vw',
 				'w1/1': '100vw'
