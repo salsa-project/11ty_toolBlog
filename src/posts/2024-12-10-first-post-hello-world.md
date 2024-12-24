@@ -8,7 +8,7 @@ seo:
   title:
   description:
   image: 2020/09/colors.jpg
-hero: graphic # options: carousel, graphic, video, split (text & image)
+hero:  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
     mobile: h-1/2 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
@@ -21,9 +21,10 @@ heroSettings:
     opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
     opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
 images: # relative to /src/assets/images/
-  feature:
+  feature: 2020/09/colors.jpg
   thumb: 2020/09/colors.jpg
   slide:
+  height:
 tags:
   - colors
   - customization
