@@ -72,10 +72,10 @@ heroSettings:
   }
 </style>
 
-<div class="flex justify-between px-0 md:mt-20 flex-col md:flex-row h-1/2 md:h-full">
+<div class="flex justify-between items-center px-0 md:mt-20 flex-col md:flex-row h-1/2 md:h-full">
   <div class="">
-    <h1 class="pl-0 text-start text-center  text-9xl border-l-0 border-secondColor"><span class="text-firstColor">Q</span><span class="text-3xl">of</span><span class="text-secondColor">ai</span></h1>
-    <p class="pl-8">Insights & Tools that make you work smart and ship fast.</p>
+    <h1 class="w-full pl-0 mt-8 text-center border-l-0 border-secondColor" style="font-size: 120pt;"><span class="text-firstColor select-none">Q</span><span class="text-3xl select-none">of</span><span class="text-secondColor select-none">ai</span></h1>
+    <p class="pl-4">Insights & Tools that make you work smart and ship fast.</p>
   </div>
   <div class="md:w-w450 -mt-8 md:-mt-32 mx-4" style="background: rgba(36, 30, 85, 0.2); border-radius: 100% 25% 80% 50px; transform: translateY(50px);">
     <img class="w-full" src="/assets/images/home/14.webp" alt="man reading" />

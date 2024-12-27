@@ -2,10 +2,10 @@
 layout: base
 ---
 
-<article class="{{ structure.g_pageWidth }}">
+<article class="w-w9/10 {{ structure.g_customPageWidth or structure.g_pageWidth }}">
 
-  <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
-  <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
+  <h1 class="text-3xl {{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+  <div class="text-sm mb-12 {{ colors.authorCustom.date or colors.authorDefault.date}}">
     <time datetime="{{ date | dateToFormat("yyyy-MM-dd") }}">
       {{ date | dateToFormat("dd LLL yyyy") }}
     </time>

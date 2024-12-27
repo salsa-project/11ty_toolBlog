@@ -23,7 +23,7 @@
   <body class="{{ colors.siteTextCustom or siteTextDefault }} bg-thirdColor">
     {% svgsprite %}
       {% include "components/nav.njk" %}
-    <div class="flex flex-col mt-12" style="min-height: calc(100vh - 48px);">
+    <div class="flex flex-col {{structure.g_customPageWidth}} mt-12" style="min-height: calc(100vh - 48px);">
 
       {#  Allows a user to easily change the Hero type on the Home page...or any page.
           See /src/home.md for how to use. 
@@ -36,12 +36,12 @@
       {# If any frontmatter includes images.feature, insert it at the top of the page, 
       below the nav and outside the default wrapper below. #}
       {% if images.feature %}
-        <figure class="sm:w-screen md:w-10/12 mx-auto {{ images.height or "h-80 md:h-8/10" }} ">
+        <figure class="sm:w-screen md:w-full mx-auto {{ images.height or "h-80 md:h-8/10" }} ">
           <img class="w-full h-full md:rounded-xl" src="{{ images.feature if 'http' in images.feature else "/assets/images/" + images.feature }}" alt="{{ title }}">
         </figure>
       {% endif %}
 
-      <div class="flex-grow max-w-full">
+      <div class="flex-grow w-full">
         <main class="block py-12" id="content">
           {{ content | safe }}
         </main>
