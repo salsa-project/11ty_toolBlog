@@ -9,6 +9,7 @@ module.exports = {
 	 * at all screen sizes.
 	 */
 	g_pageWidth: 'px-8 md:px-16 lg:px-32',
+	g_customPageWidth: 'md:w-w3/4 mx-auto',
 
 	/**
 	 * Globally disable display of Tag pills/links

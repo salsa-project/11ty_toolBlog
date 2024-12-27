@@ -1,28 +1,28 @@
 {% set navPages = collections.pages | eleventyNavigation %}
 <nav x-data="{ open: false }" class=" {{ colors.navCustom.barBg or colors.navDefault.barBg }} fixed w-w1/1 z-30">
-  <div class="px-8 md:px-16 lg:px-32">
-    <div class="flex justify-between h-12">
+  <div class="mx-auto md:w-w3/4 lg:w-w3/4">
+    <div class="flex justify-between h-14 sm:h-12">
       <div class="flex w-full justify-between">
         <div class="flex flex-1 items-center">
           {# small logo hidden on md and above #}
-          <a aria-label="Mobile Logo" href="/" class="block md:hidden {{ colors.logoCustom.mobile or colors.logoDefault.mobile }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Mobile Logo">
-            {% svg "logo-mobile", "fill-current pt-2 w-16 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Mobile Logo" %}
+          <a aria-label="Mobile Logo" href="/" class="px-4 -mt-2 block md:hidden {{ colors.logoCustom.mobile or colors.logoDefault.mobile }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Mobile Logo">
+            {% svg "logo-mobile","fill-current pt-2 w-12 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Mobile Logo" %}
           </a>
           {# large logo hidden on small, block on md #}
           <a aria-label="Desktop Logo" href="/" class="hidden md:block {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
-            {% svg "logo", "h-12", "fill-current pt-2 w-20 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %}
+            {% svg "logo", "w-12", "fill-current pt-2 w-20 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %}
           </a>
         </div>
-        <div class=" flex justify-around grow sm:ml-6 sm:flex sm:items-center">
+        <div class=" flex justify-around sm:grow sm:ml-6 sm:flex sm:items-center">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
-            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}" class=" px-4 py-1 text-sm font-medium rounded-full items-center {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }} {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
+            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}" class="hidden sm:block px-4 py-1 text-sm font-medium rounded-full items-center {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }} {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
               {{ entry.title }}
             </a>
           {% endfor %}
         </div>
-        <div class="flex-1 flex justify-end">
-          <a class="p-1 my-2 px-6 bg-firstColor text-thirdColor hover:bg-secondColor rounded-full" href="/poducts/" alt="Link to About" class=" px-3 py-2 text-sm font-medium rounded-md items-center  text-firstColor hover:text-gray-800  focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out">
+        <div class="flex-0 sm:flex-1 flex justify-end">
+          <a class="hidden sm:block p-1 my-2 px-6 bg-firstColor text-thirdColor hover:bg-secondColor rounded-full" href="/poducts/" alt="Link to About" class=" px-3 py-2 text-sm font-medium rounded-md items-center  text-firstColor hover:text-gray-800  focus:outline-none focus:text-gray-500 transition duration-150 ease-in-out">
               Products
           </a>
         </div>
@@ -31,7 +31,7 @@
       {# Right side of Navbar  #}
 
       {# MOBILE MENU  #}
-      <div class="flex items-center -mr-2 sm:hidden">
+      <div class="flex items-center -mr-2 px-4 sm:hidden">
         {# Mobile menu button #}
         <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} focus:outline-none focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
           {# Icon when menu is closed.  #}

@@ -32,6 +32,7 @@ module.exports = {
 			width: (theme) => ({
 				'w1/4': '25vw',
 				'w1/2': '50vw',
+				'w450': '450px',
 				'w2/3': '63vw',
 				'w3/4': '75vw',
 				'w9/10': '90vw',

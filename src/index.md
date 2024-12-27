@@ -12,7 +12,7 @@ seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
   title:
   description:
   image: # used for OG:image and Twitter:image. Overrides default set in _data/meta.siteImage
-hero: split  # options: carousel, graphic, video, split (text & image)
+hero:   # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height: 
     mobile: h-8/10 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
@@ -43,15 +43,41 @@ heroSettings:
       - home/9.jpg
 ---
 
+<style>
+  h1:hover span:nth-child(2){
+    font-size:48pt;
+    transition: .3s all ease-out;
+  }
+  h1{
+    letter-spacing: 4px;
+  }
+  h1 span{
+    transition: .3s all ease-out;
+  }
+  h1:hover span:nth-child(1){
+    position: relative;
+    top: 10px;
+    animation: test 1.25s ease-out infinite;
+  }
+  @keyframes test{
+    0%{
+      top: 0px;
+    }
+    50%{
+      top: -30px;
+    }
+    100%{
+      top: 0px;
+    }
+  }
+</style>
 
-<div class="h-1/2 bg-red-400 flex">
-  <div class="flex-2">
-    <p> Don't Hesitate </p>
-    <h1>Creativity Starts Here</h1>
-    <p> We build web solution for busnisses , You can be one of them, get in touch </p>
+<div class="flex justify-between px-0 md:mt-20 flex-col md:flex-row h-1/2 md:h-full">
+  <div class="">
+    <h1 class="pl-0 text-start text-center  text-9xl border-l-0 border-secondColor"><span class="text-firstColor">Q</span><span class="text-3xl">of</span><span class="text-secondColor">ai</span></h1>
+    <p class="pl-8">Insights & Tools that make you work smart and ship fast.</p>
   </div>
-  <div class="bg-blue-400 flex-1">
-    <h1>Work Starts Here</h1>
-    <img src="" alt=""/>
+  <div class="md:w-w450 -mt-8 md:-mt-32 mx-4" style="background: rgba(36, 30, 85, 0.2); border-radius: 100% 25% 80% 50px; transform: translateY(50px);">
+    <img class="w-full" src="/assets/images/home/14.webp" alt="man reading" />
   </div>
 </div>
