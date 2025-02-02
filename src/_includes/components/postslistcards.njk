@@ -1,13 +1,13 @@
 <section class="mt-12">
-  <div class="relative pb-20 lg:pb-28 ">
+  <div class="relative pb-20 lg:pb-28">
     <div class="relative w-full">
-      <div class="gap-8 flex flex-wrap">
+      <div class="gap-8 flex flex-wrap justify-center lg:justify-between">
         {% for post in postslist | reverse %}
 
-          <div class="flex flex-col overflow-hidden rounded-lg hover:-translate-y-1 hover:scale-102 duration-200" style="box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;">
+          <div class="flex flex-col sm:w-auto w-full overflow-hidden rounded-lg hover:-translate-y-1 hover:scale-102 duration-200" style="box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;">
             <div class="flex-shrink-0 bg-thirdColor">
               <a href="{{ post.url | url }}">
-                <img class="object-cover rounded-xl {{ post.data.images.align }} w-full h-48" src={% if post.data.images.thumb %}"/assets/images/{{ post.data.images.thumb }}"{% else %}"/assets/images/david-kovalenko-G85VuTpw6jg-unsplash.jpg"{% endif %} alt="{{ title }} Thumbnail">
+                <img class="object-cover rounded-xl {{ post.data.images.align }} w-full sm:h-48 h-64" src={% if post.data.images.thumb %}"/assets/images/{{ post.data.images.thumb }}"{% else %}"/assets/images/david-kovalenko-G85VuTpw6jg-unsplash.jpg"{% endif %} alt="{{ title }} Thumbnail">
               </a>
             </div>
             <div class="flex flex-col justify-between flex-1 p-4 pb-4 bg-thirdColor">

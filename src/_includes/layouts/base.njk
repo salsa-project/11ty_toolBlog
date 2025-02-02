@@ -23,7 +23,7 @@
   <body class="{{ colors.siteTextCustom or siteTextDefault }} bg-thirdColor">
     {% svgsprite %}
       {% include "components/nav.njk" %}
-    <div class="flex flex-col {{structure.g_customPageWidth}} mt-12" style="min-height: calc(100vh - 48px);">
+    <div class="flex flex-col {{structure.g_customPageWidth}} mt-12 p-6 sm:p-0" style="min-height: calc(100vh - 48px);">
 
       {#  Allows a user to easily change the Hero type on the Home page...or any page.
           See /src/home.md for how to use. 
