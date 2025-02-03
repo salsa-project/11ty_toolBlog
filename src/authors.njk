@@ -12,11 +12,11 @@ eleventyComputed:
 {% columns %}
 {% cols "flex-none" %}
 <p>
-  <img class="h-64 rounded-lg" src="{{ author.image }}" alt="Photo of {{ title }}">
+  <img class="sm:h-64 h-82 rounded-xl mx-auto" src="{{ author.image }}" alt="Photo of {{ title }}">
 </p>
 {% endcols %}
-{% cols "flex-grow px-8" %}
-<div class="mt-4 text-gray-500">
+{% cols "flex-grow px-2" %}
+<div class="mt-0 text-gray-500">
   <div class="mb-4">
     {{ author.bio }}
   </div>
