@@ -4,17 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ seo.description }}">
-    <meta property="og:title" content="{{ seo.title or title }}">
-    <meta property="og:description" content="{{ seo.description }}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:image" content="{{ seo.image }}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ seo.title or title }}">
-    <meta name="twitter:description" content="{{ seo.description }}">
-    <meta name="twitter:image" content="{{ seo.image }}">
     <title>{{ seo.title or title }}  | {{ meta.siteName }}</title>
-    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url | absoluteUrl }}"/>
     <link rel="alternate" type="application/atom+xml" title="RSS Feed for {{ meta.siteName }}" href="/feed.xml"/>
     {# Only include the Flickity js if this page uses a hero.carousel  #}
     {% if hero == "carousel" or product.carousel -%}
@@ -47,7 +38,7 @@
       below the nav and outside the default wrapper below. #}
       {% if images.feature %}
         <figure class="sm:w-screen md:w-full mx-auto {{ images.height or "h-80 md:h-8/10" }} ">
-          <img class="w-full h-full md:rounded-xl" src="{{ images.feature if 'http' in images.feature else "/assets/images/" + images.feature }}" alt="{{ title }}">
+          <img class="w-full h-full md:rounded-xl" src="{{ images.feature if 'http' in images.feature else ('/assets/images/' + images.feature) | url }}" alt="{{ title }}">
         </figure>
       {% endif %}
 
