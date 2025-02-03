@@ -59,7 +59,7 @@ eleventyComputed:
 {% endcols %}
 {% endcolumns %}
 
-<div class="px-8 pt-4 mt-8 text-gray-500 border-t border-gray-300">
+<div class="px-4 pt-4 mt-8 text-gray-500 border-t border-gray-300">
   <div class="text-lg font-semibold {{ colors.headingsCustom or colors.headingsDefault }}">10 most recent posts by {{ title }}:</div>
 
   {% set posts = collections.post | getPostsByAuthor(author.slug) %}
