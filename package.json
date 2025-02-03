@@ -28,8 +28,8 @@
     "dev:eleventy": "npx @11ty/eleventy --serve",
     "dev": "npm-run-all clean --parallel dev:*",
     "build:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
-    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
-    "build": "NODE_ENV=production npm-run-all clean build:*"
+    "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
+    "build": "cross-env NODE_ENV=production npm-run-all clean build:*"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -38,6 +38,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@tailwindcss/forms": "^0.5.3",
     "alpinejs": "^3.10.4",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "eleventy-plugin-svg-sprite": "^1.3.0",
     "luxon": "^3.2.1",
