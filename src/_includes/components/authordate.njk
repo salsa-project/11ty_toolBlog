@@ -1,7 +1,11 @@
 <div class="flex items-center mt-6">
   <div class="flex-shrink-0">
     <a href="/authors/{{ post.data.author }}/">
-      <img class="w-10 h-10 rounded-full" src="{{ postAuthor.image }}" alt=" Photo of {{ postAuthor.name }}">
+      {% if postAuthor.image %}
+        {% image postAuthor.image | replace("/assets/images/", "") or "authors/med-amine.png", "Photo of " + postAuthor.name, "100vw", "object-cover rounded-full w-10 h-10" %}
+      {% else %}
+        {% image "authors/med-amine.png", "Default author photo", "100vw", "object-cover rounded-full w-10 h-10" %}
+      {% endif %}
     </a>
   </div>
   <div class="ml-3">

@@ -2,9 +2,36 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const Image = require("@11ty/eleventy-img")
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 const pluginSvgSprite = require("eleventy-plugin-svg-sprite");
+const path = require('path')
+
+async function imageShortcode(src, alt, sizes = "100vw") {
+  // Prepend src/assets/images/ to the image path
+  const fullImagePath = `src/assets/images/${src}`;
+  let metadata = await Image(path.resolve(fullImagePath), {
+    widths: [300, 600, 900, 1200],
+    formats: ["webp", "jpeg"],
+    outputDir: "./dist/assets/images/",
+    urlPath: "/assets/images/",
+    filenameFormat: function (id, src, width, format) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
@@ -21,6 +48,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
+	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
 
 
   eleventyConfig.addPlugin(pluginSvgSprite, {
