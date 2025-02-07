@@ -4,22 +4,15 @@
 		"name": "Mohamed Amine",
 		"image": "/assets/images/authors/med-amine.webp",
 		"bio": "Thanks to Shane Robinson for creating the 11ta-template! It’s such a straightforward and efficient way to kickstart a blog, making development and deployment almost effortless. Since 2019, I’ve had the privilege of building a wide range of tools and websites, spanning from simple frontend designs to full-stack web applications. My journey has also taken me into areas like web scraping, automation, and even AI integrations. These experiences have shaped my passion for creating solutions that are both functional and impactful. Today, I’m channeling that energy into launching micro SaaS platforms while actively exploring ways to excel in social media strategies.",
-		"companyWebsites": [
-			{
-				"label": "Qofai",
-				"url": "https://www.qofai.com",
-				"email": "team.qofai@gmail.com"
-			}
-		],
 		"personalWebsites": [
 			{
-				"label": "qofai.com",
+				"label": "Qofai.com",
 				"url": "https://www.qofai.com"
 			}
 		],
 		"socialWebsites": [
 			{
-				"label": "dribbble",
+				"label": "dribble",
 				"url": ""
 			},
 			{
