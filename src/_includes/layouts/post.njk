@@ -4,8 +4,8 @@ layout: base
 
 <article class="w-w9/10 {{ structure.g_customPageWidth or structure.g_pageWidth }}">
 
-  <h1 class="text-3xl {{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
-  <div class="text-sm mb-12 {{ colors.authorCustom.date or colors.authorDefault.date}}">
+  <h1 class="text-3xl md:text-4xl {{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+  <div class="text-sm mb-8 {{ colors.authorCustom.date or colors.authorDefault.date}}">
     <time datetime="{{ date | dateToFormat("yyyy-MM-dd") }}">
       {{ date | dateToFormat("dd LLL yyyy") }}
     </time>
@@ -14,16 +14,24 @@ layout: base
       {# Only display the Author Block if there is a value for "author" in Post Frontmatter #}
       {% if author %}
         {% set postAuthor = authors | getAuthor(author) %}
-        by <a class="hover:underline" href="/authors/{{ author }}/">{{ postAuthor.name }}</a>
+        by <a class="underline hover:text-secondColor" href="/authors/{{ author }}/">{{ postAuthor.name }}</a>
       {% endif %}
     {% endif %}
 
   </div>
 
+  {# If any frontmatter includes images.feature, insert it at the top of the page, 
+  below the nav and outside the default wrapper below. #}
+  {% if images.feature %}
+    <figure class="sm:w-screen md:w-full mx-auto mb-12 {{ images.height or "h-80 md:h-8/10" }} ">
+      <img class="w-full h-full rounded-xl" src="{{ images.feature if 'http' in images.feature else ('/assets/images/' + images.feature) | url }}" alt="{{ title }}">
+    </figure>
+  {% endif %}
+
   {{ layoutContent | safe }}
 
   {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
-    <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
+    <div class="border-t md:justify-between md:items-start md:flex md:flex-row">
 
       {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
       <div class="md:w-1/2">

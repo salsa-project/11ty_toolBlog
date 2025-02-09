@@ -34,16 +34,8 @@
         {% include heroComponent | join %}
       {% endif %}
 
-      {# If any frontmatter includes images.feature, insert it at the top of the page, 
-      below the nav and outside the default wrapper below. #}
-      {% if images.feature %}
-        <figure class="sm:w-screen md:w-full mx-auto {{ images.height or "h-80 md:h-8/10" }} ">
-          <img class="w-full h-full md:rounded-xl" src="{{ images.feature if 'http' in images.feature else ('/assets/images/' + images.feature) | url }}" alt="{{ title }}">
-        </figure>
-      {% endif %}
-
       <div class="flex-grow w-full">
-        <main class="block py-12" id="content">
+        <main class="block py-4 md:py-16" id="content">
           {{ content | safe }}
         </main>
       </div>
