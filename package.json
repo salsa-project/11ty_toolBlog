@@ -31,7 +31,7 @@
     "build:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
     "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "build": "cross-env NODE_ENV=production npm-run-all clean build:*",
-    "deploy": "./deploy.ps1"
+    "deploy": "powershell ./deploy.ps1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
