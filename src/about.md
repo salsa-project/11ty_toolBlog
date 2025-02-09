@@ -32,4 +32,6 @@ Right now, I’m working on **Qofai**, a space to bring my ideas and projects to
 
 If I’m not deep into code, you’ll find me brainstorming new ways to help small businesses thrive, naming pigeons, or diving into the latest trends in Tech, AI and Automation. I’m always looking for ways to connect and collaborate, so feel free to reach out.
 
-Thanks for stopping by!
+**Thanks for stopping by!**
+
+Note: Some of the links on this site are affiliate links, meaning I may earn a small commission if you make a purchase through them. This helps support the blog at no additional cost to you.
