@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+	darkMode: 'class',
 	content: [
 		'./src/**/*.html',
 		'./src/**/*.njk',
@@ -38,11 +39,28 @@ module.exports = {
 				'w9/10': '90vw',
 				'w1/1': '100vw'
 			}),
-			colors: {
-			  'firstColor': '#241e55',
-			  'secondColor': '#C9393B',
-			  'thirdColor': '#F6F6FB',
-			},
+			colors: ({ colors }) => ({
+				firstColor: '#241e55',
+				secondColor: '#C9393B',
+				thirdColor: {
+					DEFAULT: '#F6F6FB',
+					dark: '#1a202c'
+				},
+				siteTextCustom: {
+					DEFAULT: 'text-slate-900',
+					dark: 'text-slate-100'
+				},
+				tagPillDefault: {
+					text: 'text-slate-900',
+					textDark: 'text-slate-100',
+					bg: 'bg-slate-200',
+					bgDark: 'bg-slate-700',
+					textHover: 'text-white',
+					textHoverDark: 'text-slate-200',
+					bgHover: 'bg-slate-700',
+					bgHoverDark: 'bg-slate-600'
+				}
+			}),
 			contrast: {
 				93: '.93',
 			  },

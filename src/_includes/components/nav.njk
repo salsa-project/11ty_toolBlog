@@ -1,5 +1,5 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<nav x-data="{ open: false }" class=" {{ colors.navCustom.barBg or colors.navDefault.barBg }} fixed w-w1/1 z-30">
+<nav x-data="{ open: false }" class=" {{ colors.navCustom.barBg or colors.navDefault.barBg }} fixed w-w1/1 z-30 bg-white dark:bg-thirdColor-dark">
   <div class="mx-auto md:w-w3/4 lg:w-w3/4">
     <div class="flex justify-between h-16 sm:h-12">
       <div class="flex w-full justify-between">
@@ -28,18 +28,19 @@
           class=" flex justify-around sm:grow sm:ml-6 sm:flex sm:items-center">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
-            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}" class="hidden sm:block px-4 py-1 text-sm font-medium rounded-full items-center {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }} {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
+            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}" class="hidden sm:block px-4 py-1 dark:text-gray-300 text-sm font-medium rounded-full items-center {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }} {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
               {{ entry.title }}
             </a>
           {% endfor %}
         </div>
-        <div class="flex-0 sm:flex-1 flex justify-end">
+        <div class="flex-0 sm:flex-1 flex justify-end items-center space-x-4">
+          {% include "components/theme-toggle.njk" %}
           <a
-            class="hidden sm:block p-1 my-2 px-6 bg-firstColor text-thirdColor hover:bg-secondColor rounded-full"
+            class="hidden sm:block p-1 my-2 px-6 bg-firstColor text-thirdColor dark:bg-secondColor dark:text-firstColor-dark hover:bg-secondColor dark:hover:bg-secondColor-dark rounded-full transition-colors"
             href="/poducts/"
             alt="Link to About"
-            class=" px-3 py-2 text-sm font-medium rounded-md items-center text-firstColor hover:text-gray-800 focus:outline-none
-              focus:text-gray-500 transition duration-150 ease-in-out">
+            class="px-3 py-2 text-sm font-medium rounded-md items-center text-firstColor hover:text-siteTextCustom focus:outline-none
+              focus:text-siteTextCustom transition duration-150 ease-in-out">
             Products
           </a>
         </div>
@@ -52,10 +53,10 @@
         <button
           @click="open = !open"
           class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}
-            transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton
-            }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} focus:outline-none focus:{{
+            transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} dark:hover:bg-gray-700
+            }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} dark:hover:bg-gray-700 focus:outline-none focus:{{
             colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or
-            colors.navDefault.mobileButton }}"
+            colors.navDefault.mobileButton }} dark:focus:bg-gray-700"
           x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
           aria-label="Main menu"
           x-bind:aria-expanded="open">
@@ -64,34 +65,28 @@
             x-state:on="Menu open"
             x-state:off="Menu closed"
             :class="{ 'hidden': open, 'block': !open }"
-            class="block w-6 h-6"
+            class="block w-7 h-7 stroke-[#243c5a] dark:stroke-[#BAB9B9]"
             fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <svg width="28px" height="28px" viewBox="0 0 28.00 28.00" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M8 12H8.00901M12.0045 12H12.0135M15.991 12H16"
-                  stroke="#241e55"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"/>
-                <circle cx="12" cy="12" r="10" stroke="#241e55" stroke-width="2.2"/>
-              </g>
-            </svg>
+            viewBox="0 0 28 28">
+            <g id="menu">
+              <path
+                d="M8 12H8.00901M12.0045 12H12.0135M15.991 12H16"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+            </g>
           </svg>
           {# Icon when menu is open.  #}
           <svg
             x-state:on="Menu open"
             x-state:off="Menu closed"
             :class="{ 'hidden': !open, 'block': open }"
-            class="hidden w-6 h-6"
+            class="hidden w-7 h-7"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor">
-            <path stroke="#C9393B" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke="#C9393B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
