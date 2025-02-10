@@ -4,7 +4,12 @@
     {# If there's a better/easier way of doing this, please LMK.  #}
     {% if not loop.first %}
       <div class="inline-block p-2">
-        <a alt="tagged {{ tag }}" aria-label="tagged {{ tag }}" href="/tags/{{ tag | slug }}/" class="px-4 py-2 text-sm {{ colors.tagPillCustom.text or colors.tagPillDefault.text }} dark:{{ colors.tagPillCustom.textDark or colors.tagPillDefault.textDark }} {{ colors.tagPillCustom.bg or colors.tagPillDefault.bg }} dark:{{ colors.tagPillCustom.bgDark or colors.tagPillDefault.bgDark }} rounded-full hover:{{ colors.tagPillCustom.textHover or colors.tagPillDefault.textHover }} dark:hover:{{ colors.tagPillCustom.textHoverDark or colors.tagPillDefault.textHoverDark }} hover:{{ colors.tagPillCustom.bgHover or colors.tagPillDefault.bgHover }} dark:hover:{{ colors.tagPillCustom.bgHoverDark or colors.tagPillDefault.bgHoverDark }} transition-colors duration-200">{{ tag }}</a>
+        <a alt="tagged {{ tag }}" aria-label="tagged {{ tag }}" href="/tags/{{ tag | slug }}/" class="px-4 py-2 text-sm rounded-full
+          {{colors.tagPillDefault.text}} dark:{{colors.tagPillDefault.dark.text}}
+          {{colors.tagPillDefault.bg}}   dark:bg-gray-700
+          hover:text-gray-300                       hover:dark:{{colors.tagPillDefault.dark.textHover}}
+          hover:{{colors.tagPillDefault.bgHover}}   hover:dark:bg-secondColor
+          transition-colors duration-200">{{ tag }}</a>
       </div>
     {% endif %}
   {% endfor %}

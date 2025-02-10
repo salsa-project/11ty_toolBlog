@@ -31,7 +31,7 @@ layout: base
   {{ layoutContent | safe }}
 
   {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
-    <div class="mt-24 border-t md:justify-between md:items-start md:flex md:flex-row">
+    <div class="py-2 mt-24 border-t md:justify-between md:items-center md:flex md:flex-row">
 
       {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
       <div class="md:w-1/2">
@@ -41,7 +41,7 @@ layout: base
       </div>
 
       {# If you don't want to display Social Share icons, disable them in /src/_data/structure.js  #}
-      <div class="px-2 pt-6 md:pt-2 md:w-1/2 md:flex md:justify-end">
+      <div class="md:w-1/2 md:flex md:justify-end">
         {% if structure.g_showSocialShareIcons %}
           {% include "components/socialshare.njk" %}
         {% endif %}
@@ -51,7 +51,7 @@ layout: base
   {% endif %}
 
   {# ===== Previous and Next =====  #}
-  <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
+  <div class="border-t mt-0 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
     {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
     {% set nextPost = collections.post | getNextCollectionItem(page) %}
 

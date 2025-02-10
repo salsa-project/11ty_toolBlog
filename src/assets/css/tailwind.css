@@ -1,5 +1,32 @@
 @tailwind base;
 
+:root {
+  --shadow-light: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  --shadow-dark: -8px -4px 8px 0px #141925, 8px 4px 12px 0px #1c232c, 4px 4px 4px 0px #2d3748 inset, -4px -4px 4px 0px #1a202c inset;
+  --shadowL: var(--shadow-light);
+  --shadowD: var(--shadow-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadow: var(--shadow-dark);
+  }
+}
+
+.dark {
+  --shadow: var(--shadow-dark);
+}
+
+@layer utilities {
+  .shadow-light {
+    box-shadow: var(--shadowL);
+  }
+  .shadow-dark {
+    box-shadow: var(--shadowD);
+  }
+}
+
+
 h1,
 h2,
 h3,
@@ -31,6 +58,9 @@ dd a {
 }
 p {
 	@apply mt-4 dark:text-gray-300;
+}
+div {
+	@apply dark:text-gray-400;
 }
 .wrapper > p:first-of-type {
 	@apply p-0 m-0;

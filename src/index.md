@@ -74,7 +74,7 @@ heroSettings:
 
 <div class="flex justify-between items-center px-0 md:mt-20 flex-col md:flex-row h-1/2 md:h-full">
   <div class="">
-    <h1 class="w-full pl-0 mt-8 text-center border-l-0 border-secondColor" style="font-size: 120pt;"><span class="text-firstColor select-none">Q</span><span class="text-3xl select-none">of</span><span class="text-secondColor select-none">ai</span></h1>
+    <h1 class="w-full pl-0 mt-8 text-center border-l-0 border-secondColor" style="font-size: 120pt;"><span class="text-firstColor dark:text-gray-600 select-none">Q</span><span class="text-3xl select-none">of</span><span class="text-secondColor select-none">ai</span></h1>
     <p class="pl-4">Insights & Tools that make you work smart and ship fast.</p>
   </div>
   <div class="md:w-w450 -mt-8 md:-mt-32 mx-4" style="background: rgba(36, 30, 85, 0.2); border-radius: 100% 25% 80% 50px; transform: translateY(50px);">

@@ -5,7 +5,7 @@ tags: pages
 
 <article class="{{ structure.g_customPageWidth or structure.g_pageWidth }}">
 
-  <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+  <h1 class="my-4 md:my-24 md:mt-0 text-center text-3xl md:text-4xl {{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
 
   {% if seo.description %}
     <div class="{{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">

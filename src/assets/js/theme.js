@@ -10,7 +10,7 @@ const storedPreference = localStorage.getItem('theme');
 
 // Set initial theme
 const initialTheme = storedPreference || systemPreference;
-html.classList.toggle('dark', initialTheme === 'dark');
+html.classList.add(initialTheme);
 moonIcon.classList.toggle('hidden', initialTheme === 'dark');
 sunIcon.classList.toggle('hidden', initialTheme !== 'dark');
 

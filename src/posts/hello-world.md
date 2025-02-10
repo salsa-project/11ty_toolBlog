@@ -27,10 +27,8 @@ images: # relative to /src/assets/images/
   slide:
   height:
 tags:
-  - mvp
-  - saas
-  - entrepreneurship
-  - productivity
+  - Hello World
+  - intro
 ---
 
 

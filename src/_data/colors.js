@@ -69,8 +69,8 @@ module.exports = {
 		mobileBgActive: 'bg-gray-700',
 		mobileBgHover: 'bg-gray-100',
 		mobileBgFocus: 'bg-gray-300',
-		mobileText: 'text-firstColor',
-		mobileTextActive: 'text-secondColor',
+		mobileText: 'text-firstColor dark:text-gray-400',
+		mobileTextActive: 'text-secondColor dark:text-red-400',
 		mobileTextHover: 'text-gray-600',
 		mobileTextFocus: 'text-gray-700',
 		mobileButton: 'text-gray-500',
@@ -135,12 +135,16 @@ module.exports = {
 	 * Manage display in /src/_data/structure.js
 	 */
 	socialShareDefault: {
-		color: 'text-gray-700',
-		hover: 'text-gray-800',
+		color: 'text-secondColor',
+		hover: 'text-secondColor',
+		dark:{
+			color: 'dark:text-secondColor',
+			hover: 'hover:text-thirdColor',
+		}
 	},
 	socialShareCustom: {
 		color: 'text-firstColor',
-		hover: 'text-secondColor',
+		hover: 'dark:hover:text-gray-400',
 	},
 
 	/**
@@ -214,14 +218,20 @@ module.exports = {
 	tagPillDefault: {
 		text: 'text-gray-700',
 		textHover: 'text-gray-800',
-		bg: 'bg-gray-200',
-		bgHover: 'bg-gray-300',
+		bg: 'bg-gray-300',
+		bgHover: 'bg-secondColor',
+		dark: {
+			text: 'text-gray-300',
+			textHover: 'text-gray-300',
+			bg: 'bg-thirdColor',
+			bgHover: 'bg-secondColor'
+		}
 	},
 	tagPillCustom: {
 		text: '',
 		textHover: '',
 		bg: '',
-		bgHover: '',
+		bgHover: ''
 	},
 
 	/**
