@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Qofai Tech Purposes Website such as blogging and more...</title>
+  <subtitle>Set of tools and valuable posts for tech and non tech users.</subtitle>
+  <link href="https://qofai.com"/>
+  <link href="https://qofai.com/feed.xml" rel="self"/>
+  <updated>2025-02-06T14:30:03Z</updated>
+  <id>https://qofai.com</id>
+  <author>
+    <name>Med Amine</name>
+    <email>team.qofai@gmail.com</email>
+  </author>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="https://qofai.com/blog/hello-world/"/>
+      <updated>2025-02-06T14:30:03Z</updated>
+      <id>https://qofai.com/blog/hello-world/</id>
+      <content type="html">&lt;p&gt;Hey 🖐️, Since this the first blog i’ve decided to make it as introduction for the blog and what it aims for .&lt;/p&gt;
+&lt;h2&gt;But, first of all who i’m 👨‍💻 ?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Mohamed Amine&lt;/strong&gt; from Algeria 32 years old , Fullstack developer using &lt;strong&gt;JAVASCRIPT&lt;/strong&gt; stack with +7 years in the web development industry , i’ve build/worked on many projects such as :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Crispty Talk&lt;/strong&gt; (2020):  Content based social platform similar to &lt;strong&gt;medium&lt;/strong&gt; , worked on it from the ground up moving at different architect levels such as Database conception, Auth Logic using passport …and many features such as creating posts, following people … etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tajin&lt;/strong&gt; (2021): Social media platform UI &amp;amp; UX for Food Makers (CHEFS) .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CovidStats&lt;/strong&gt; (2021): React.js app for local covid stats , where it shows each Province virus stats (healed, deaths, affected … etc)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AMDE&lt;/strong&gt; (2021): Arabic Markdown Editor , primarly created for &lt;strong&gt;Crispty Talk&lt;/strong&gt; , so people can create posts , then abstract it as separate project , so i can use it later for others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scrap Projects&lt;/strong&gt; : scripts for scrapping local websites either by fetching their api directly using script or N8N (automation tool) or using Puppeteer .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Node Boilerplate&lt;/strong&gt; (2025): Currently working on plugin based node.js boilerplate so people can use it for their MVP/Saas projects , since it’s plugins based , it will make them create almost any type of website without typing any line of code … simply by adding/removing those un/wanted plugins (auth, seo, blog, theme) … think of it as wordpress but in node.js .&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;… And More Projects but i’m not going to mention here since the post isn’t about me directly .&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Back to the track&lt;/h2&gt;
+&lt;p&gt;This blog is aiming to provide insights and tools that shorten the road of entoproneurs helping them reachs their goal faster by focusing on the main factors rather than re-inventing the wheel for each time .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A curated list of tools that boost productions for both development and marketing fields.&lt;/li&gt;
+&lt;li&gt;Guides that walk you step by step showing how to go from idea validation to a working MVP within short period of time .&lt;/li&gt;
+&lt;li&gt;Insights for the new era of AI &amp;amp; related topics and how you position yourself since things are changing almost every few weeks .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;At the end&lt;/h2&gt;
+&lt;p&gt;If you’re an entrepreneur, developer, or just someone interested Micro/SaaS and shiping fast, stay tuned!&lt;/p&gt;
+</content>
+    </entry>
+</feed>
