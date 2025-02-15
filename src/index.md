@@ -77,7 +77,11 @@ heroSettings:
     <h1 class="w-full pl-0 mt-8 text-center border-l-0 border-secondColor" style="font-size: 120pt;"><span class="text-firstColor dark:text-gray-600 select-none">Q</span><span class="text-3xl select-none">of</span><span class="text-secondColor select-none">ai</span></h1>
     <p class="pl-4">Insights & Tools that make you work smart and ship fast.</p>
   </div>
-  <div class="md:w-w450 -mt-8 md:-mt-32 mx-4" style="background: rgba(36, 30, 85, 0.2); border-radius: 100% 25% 80% 50px; transform: translateY(50px);">
-    <img class="w-full" src="/assets/images/home/14.webp" alt="man reading" />
+  <div class="md:w-w450 w-full -mt-4 md:-mt-32 mx-4 p-4 md:p-8 pt-0 py-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700" style="transform: translateY(50px);">
+    <h2 class="pt-8 md:pt-0 text-center text-xl md:text-2xl">Ship Fast Insights , Sent Weekly</h2>
+    <p class="mb-4 text-center">Join elite entrepreneurs getting curated MVP tools and insights that boost the productivity by X. Launch your empire in days/weeks not months.</p>
+    <iframe src="https://embeds.beehiiv.com/0fa62d02-a161-4a36-84b3-16fb888afbca?slim=true" data-test-id="beehiiv-embed" height="52" class="w-full" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
   </div>
 </div>
+
+<div class="lg:my-0 my-24"></div>
